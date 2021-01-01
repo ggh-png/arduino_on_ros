@@ -5,6 +5,7 @@
 
 2. port 권한 문제 
 port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
+
     ls -l /dev/tty*
 
 명령어를 통해 아두이노 port를 찾고 
@@ -17,17 +18,21 @@ port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
 
 1. 
     sudo apt-get install ros-melodic-rosserial 
+    
 이는 PC의 ROS는 TCP/IP 기반의 통신을 하기때문에, 
 아두이노 값을 serial 통신으로 받아와 tcp/ip로 중재할 수 있는 serial_server로 동작가능한 노드생성을 위해 다운.
 
 2-1. 
     sudo apt-get install ros-melodic-rosserial-arduino 
+    
 이는 아두이노가 ros통신을 위해 serial_client로 동작하기 위함. 
 
 
 
 2-2. 아두이노 라이브러리 경로에서 (보통 ~/Arduino/libraries 경로) 
+
     rosrun rosserial_arduino make_libraies.py . 
+    
 실행시, ros_lib가 해당 경로에서 설치됨(이미 설치된 파일이 존재시, rm -rf ros_lib 를 통해 삭제) 
 
 * ros_lib 설치시, 통신포트는 기본으로 설정된다.( 57600bps)
