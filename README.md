@@ -17,7 +17,8 @@ port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
 ## ROS와 아두이노 연동 -> rosserial 설치
 
 1. 
-    sudo apt-get install ros-melodic-rosserial 
+
+       sudo apt-get install ros-melodic-rosserial 
   
 이는 PC의 ROS는 TCP/IP 기반의 통신을 하기때문에, 
 아두이노 값을 serial 통신으로 받아와 tcp/ip로 중재할 수 있는 serial_server로 동작가능한 노드생성을 위해 다운.
@@ -42,6 +43,6 @@ port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
 
 4. ros와 통신하기 위해서는 roscore를 항상 실행시켜주어야 하며
 
-    rosrun rosserial_python serial_node.py 
+       rosrun rosserial_python serial_node.py 
   
 로 serial_server인 중재 노드를 실행시켜주어야 ros와 연동이 가능해진다.
