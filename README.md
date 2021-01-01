@@ -15,8 +15,8 @@ port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
 를 통해 해당 포트 권한을 해제하기 !
 
 ## ROS와 아두이노 연동 -> rosserial 설치
-1. 
 
+1. 
     sudo apt-get install ros-melodic-rosserial 
   
 이는 PC의 ROS는 TCP/IP 기반의 통신을 하기때문에, 
@@ -40,7 +40,7 @@ port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.
 
 3. arduino IDE의 스케치메뉴의 라이브러리 가져오기를 통해 ros_lib를 가져오면 해당 예제를 사용할 수 있다.
 
-4. ros와 통신하기 위해서는 roscore를 항상 실행시켜주어야 하며, 
+4. ros와 통신하기 위해서는 roscore를 항상 실행시켜주어야 하며
 
     rosrun rosserial_python serial_node.py 
   
