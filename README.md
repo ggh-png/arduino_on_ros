@@ -2,8 +2,10 @@
 
 ## 아두이노 사용
 1. 
-아두이노 설치의 경우 터미널창 'arduino' 를 치면 깔아야하는 명령어 자동으로 유도해준다. -> 설치시 home 경로에 아두이노 설치됨
-<br/><br/><br/>
+    https://www.arduino.cc/en/Guide/Linux
+
+install arduino 
+
 2. 
 port 권한 문제 port(USB) 권한을 승인해주어야 IDE에서 대응하는 PORT가 뜬다.<br/>
 
